@@ -26,46 +26,118 @@
     </head>
 
     <body>
-        <header class="header">
-            <div class="container">
-                <nav class="nav">
+        <header>
+            <div class="header-container">
+                <div class="logo-wrapper">
+               
                     <a href="./index.html" class="logo"
                         >Web<span class="logo-color">Studio</span></a
                     >
-                    <ul class="nav-ul">
-                        <li class="menu">
-                            <a class="navigation current" href="./index.html"
-                                >Studio</a
-                            >
-                        </li>
-                        <li class="menu">
-                            <a class="navigation" href="">Portfolio</a>
-                        </li>
-                        <li class="menu">
-                            <a class="navigation" href="">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <button type="button" class="open-nav-menu-btn">
+                        <svg class="menu-icon" width="24" height="24">
+                                    <use
+                                        href="./images/icons.svg#icon-menu"
+                                    ></use>
+                    </button> 
+                </div>
+                
+                    <div class="header-menu-wrapper is-pen">
+                        <button type="button" class="header-menu-close-btn">
+                    <svg class="modal-icon-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg></button>
+                         <nav class="nav">
+                            <ul class="nav-ul">
+                                <li class="menu">
+                                    <a class="navigation current" href="./index.html">Studio</a>
+                                </li>
+                                <li class="menu">
+                                    <a class="navigation" href="">Portfolio</a>
+                                </li>
+                                <li class="menu">
+                                    <a class="navigation" href="">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    
+                        <address class="contacts-wrapper">
+                            <ul class="contacts">
+                                <li class="menu">
+                                    <a href="mailto:info@devstudio.com" class="contacts-link"
+                                        >info@devstudio.com</a
+                                    >
+                                </li>
+                                <li class="menu">
+                                    <a href="tel:+110001111111" class="contacts-link"
+                                        >+11 (000) 111-11-11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
 
-                <address class="contacts">
-                    <ul class="contacts">
-                        <li class="menu">
-                            <a href="mailto:info@devstudio.com" class="contacts"
-                                >info@devstudio.com</a
-                            >
-                        </li>
-                        <li class="menu">
-                            <a href="tel:+110001111111" class="contacts"
-                                >+11 (000) 111-11-11</a
-                            >
-                        </li>
-                    </ul>
-                </address>
+                        <div class="header-menu-social">
+                                    <ul class="social">
+                                    <li class="social-list">
+                                        <a href="" class="social-links">
+                                            <svg
+                                                class="social-icons"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list">
+                                        <a href="" class="social-links">
+                                            <svg
+                                                class="social-icons"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list">
+                                        <a href="" class="social-links">
+                                            <svg
+                                                class="social-icons"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-list">
+                                        <a href="" class="social-links">
+                                            <svg
+                                                class="social-icons"
+                                                width="24"
+                                                height="24"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                
             </div>
         </header>
 
         <main>
-            <section class="banner">
+            <!-- <section class="banner">
                 <div class="container">
                     <h1 class="banner-title">
                         Effective Solutions for Your Business
@@ -74,9 +146,9 @@
                         Order Service
                     </button>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="advantages">
+            <!-- <section class="advantages">
                 <div class="container">
                     <h2 class="visually-hidden">Advantages</h2>
                     <ul class="adv-ul">
@@ -142,9 +214,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="team">
+            <!-- <section class="team">
                 <div class="container">
                     <h2 class="title">Our Team</h2>
                     <ul class="team-ul">
@@ -414,9 +486,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="portfolio">
+            <!-- <section class="portfolio">
                 <div class="container">
                     <h2 class="title">Our Portfolio</h2>
                     <ul class="port-ul">
@@ -546,11 +618,11 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
         </main>
 
-        <footer class="footer">
-            <!-- <div class="container"> -->
+        <!-- <footer class="footer">
+            
 
             <div class="footer-inner">
                 <div class="foter-inner-item">
@@ -561,7 +633,7 @@
                         Increase the flow of customers and sales for your
                         business with digital marketing & growth solutions.
                     </p>
-                    <!-- </div> -->
+                   
                 </div>
                 <div class="foter-inner-item">
                     <p class="footer-social footer-p">Social media</p>
@@ -641,9 +713,9 @@
                         </button>
                     </form>
                 </div>
-                <!-- </div> -->
+              
             </div>
-        </footer>
+        </footer> -->
 
         <div class="modal-overlay is-open">
             <div class="modal-body">
@@ -750,5 +822,6 @@
                 </form>
             </div>
         </div>
+
     </body>
 </html>
