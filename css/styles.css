@@ -44,8 +44,18 @@ body {
     margin-right: auto;
     padding: 0 15px;
     margin: 50px auto;
+    justify-content: center;
 }
-
+@media screen and (width: 768px) {
+    .container {
+        max-width: 320px;
+    }
+}
+@media screen and (width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
 /* #endregion ------------------ Body ---------------------------------------*/
 
 /* #region ------------------ HEADER ---------------------------------------*/
@@ -398,37 +408,64 @@ ul.contacts,
 
 /* #region ------------------ Banner Section ---------------------------------------*/
 .banner {
-    /* padding: 188px 0; */
-    display: flex;
     background-color: #2e2f42;
-    height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(
             to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url(../images/banner.jpg);
+        url(../images/banner@mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
+    min-height: 432px;
 }
 
 .banner .container {
-    align-content: center;
-    text-align: center;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .banner {
+        min-height: 436px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .banner {
+        min-height: 600px;
+    }
 }
 
 .banner-title {
-    max-width: 496px;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 72px;
+
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #fff;
-    text-align: center;
-    margin: auto;
+}
+@media screen and (min-width: 768px) {
+    .banner-title {
+        min-width: 496px;
+        margin-top: 112px;
+        margin-bottom: 36px;
+
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .banner-title {
+        margin-top: 188px;
+        margin-bottom: 48px;
+    }
 }
 
 .banner-button {
@@ -444,7 +481,7 @@ ul.contacts,
     color: #fff;
     cursor: pointer;
 
-    margin-top: 48px;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     padding: 16px 32px;
