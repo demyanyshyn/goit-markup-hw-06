@@ -53,8 +53,8 @@ header {
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 16px;
-    margin-bottom: 96px;
+    padding: 0 16px 96px 16px;
+    /* margin-bottom: 96px; */
     justify-content: center;
     flex-direction: column;
 }
@@ -381,7 +381,13 @@ ul.contacts,
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #434455;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .contacts-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -636,8 +642,7 @@ ul.contacts,
     }
 }
 
-.adv-title,
-.team-title {
+.adv-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -647,8 +652,7 @@ ul.contacts,
     text-align: center;
 }
 @media screen and (min-width: 1158px) {
-    .adv-title,
-    .team-title {
+    .adv-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -700,7 +704,7 @@ ul.contacts,
     max-width: 768px;
     min-width: 320px;
     width: 100%;
-    padding: 96px 0;
+    /* padding: 96px 0; */
     background-color: #f4f4fd;
     margin-right: auto;
     margin-left: auto;
@@ -748,7 +752,17 @@ ul.contacts,
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .social {
@@ -756,8 +770,9 @@ ul.contacts,
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 8px 16px 0 16px;
+    padding: 0px;
     flex-direction: row;
+    margin-top: 8px;
 }
 
 .social-links {
@@ -841,12 +856,20 @@ ul.contacts,
     overflow: hidden;
 }
 
+.image-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 .port-item {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
     position: relative;
     background-color: #fff;
+}
+.port-item .adv-p {
+    margin-top: 8px;
 }
 
 .portfolio-title {
@@ -1253,7 +1276,7 @@ ul.contacts,
 
 .footer-social {
     text-align: center;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
     .footer-social {
